@@ -8,6 +8,10 @@ Repositori ini sebelumnya berisi aplikasi React/TypeScript dari proyek lain. Fon
 
 Versi yang tersedia saat ini adalah **catalogue-first MVP**: landing page, katalog produk, filter kategori, trust signals, dan alur permintaan pesanan yang belum terhubung ke pembayaran atau provisioning otomatis.
 
+## Website production
+
+Website permanen tersedia di [geo-booster-eta.vercel.app](https://geo-booster-eta.vercel.app/). Deployment production dibuat dari export statis `php-app/static/`, sedangkan aplikasi PHP di `php-app/public/` tetap menjadi source canonical untuk pengembangan backend berikutnya.
+
 ## Menjalankan lokal
 
 ```bash
@@ -39,3 +43,5 @@ php -l php-app/public/index.php
 ```
 
 Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunjuk ke `php-app/public/`. Jangan pernah menjadikan `config/`, `storage/`, atau `.env` sebagai web root.
+
+Deployment Vercel saat ini menggunakan upload production langsung karena GitHub App Vercel belum terpasang pada akun. Jika GitHub App diaktifkan, project dapat dihubungkan ke branch `main` agar deployment berjalan otomatis setiap push.
