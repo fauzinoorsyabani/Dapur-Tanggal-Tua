@@ -45,3 +45,5 @@ php -l php-app/public/index.php
 Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunjuk ke `php-app/public/`. Jangan pernah menjadikan `config/`, `storage/`, atau `.env` sebagai web root.
 
 Deployment Vercel saat ini menggunakan upload production langsung karena GitHub App Vercel belum terpasang pada akun. Jika GitHub App diaktifkan, project dapat dihubungkan ke branch `main` agar deployment berjalan otomatis setiap push.
+
+Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Setiap kartu produk membuka WhatsApp `+62 895-6092-50509` dengan nama dan harga produk yang sudah terisi. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.
