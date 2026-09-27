@@ -10,7 +10,7 @@ Versi yang tersedia saat ini adalah **catalogue-first MVP**: landing page, katal
 
 ## Website production
 
-Website permanen tersedia di [geo-booster-eta.vercel.app](https://geo-booster-eta.vercel.app/). Deployment production dibuat dari export statis `php-app/static/`, sedangkan aplikasi PHP di `php-app/public/` tetap menjadi source canonical untuk pengembangan backend berikutnya.
+Website permanen tersedia di [geo-booster-fauzins-projects.vercel.app](https://geo-booster-fauzins-projects.vercel.app/). Deployment production dibuat dari export statis `php-app/static/`, sedangkan aplikasi PHP di `php-app/public/` tetap menjadi source canonical untuk pengembangan backend berikutnya.
 
 ## Menjalankan lokal
 
@@ -20,6 +20,8 @@ php -S 127.0.0.1:8080 -t public
 ```
 
 Buka `http://127.0.0.1:8080`.
+
+Untuk IDE Antigravity, buka repository ini lalu jalankan `./run-local.sh` dari terminal. Panduan lengkap tersedia di [docs/antigravity.md](docs/antigravity.md).
 
 ## Struktur penting
 
@@ -46,4 +48,4 @@ Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunju
 
 Deployment Vercel saat ini menggunakan upload production langsung karena GitHub App Vercel belum terpasang pada akun. Jika GitHub App diaktifkan, project dapat dihubungkan ke branch `main` agar deployment berjalan otomatis setiap push.
 
-Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Setiap kartu produk membuka WhatsApp `+62 895-6092-50509` dengan nama dan harga produk yang sudah terisi. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.
+Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Harga sengaja tidak ditampilkan atau dikirim otomatis; customer menanyakannya melalui WhatsApp `+62 895-6092-50509`. Main page memiliki animasi orb, orbit, floating cards, spark, dan status pulse dengan dukungan `prefers-reduced-motion`. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.

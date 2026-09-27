@@ -16,3 +16,20 @@
 .sold-out .product-image{filter:grayscale(.7);opacity:.55}
 .product-foot small{display:block;color:#9999a0;font:10px 'DM Mono';margin-top:4px}
 .product-arrow{display:grid;place-items:center;width:29px;height:29px;background:var(--ink);color:var(--lime);border-radius:50%;font-size:17px}
+
+/* Main page motion system */
+@keyframes gb-orb-float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes gb-orbit-spin{from{transform:rotate(-25deg)}to{transform:rotate(335deg)}}
+@keyframes gb-orbit-spin-reverse{from{transform:rotate(44deg)}to{transform:rotate(-316deg)}}
+@keyframes gb-card-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes gb-spark-pulse{0%,100%{transform:scale(.85) rotate(0deg);opacity:.55}50%{transform:scale(1.18) rotate(18deg);opacity:1}}
+@keyframes gb-pulse-glow{0%,100%{box-shadow:0 0 0 4px #dbf5da,0 0 0 rgba(107,218,104,0)}50%{box-shadow:0 0 0 7px rgba(219,245,218,.35),0 0 18px rgba(107,218,104,.35)}}
+.main-orb{animation:gb-orb-float 7s ease-in-out infinite}
+.orbit-one{animation:gb-orbit-spin 18s linear infinite}
+.orbit-two{animation:gb-orbit-spin-reverse 24s linear infinite}
+.card-top{animation:gb-card-float 5s ease-in-out infinite}
+.card-bottom{animation:gb-card-float 6s ease-in-out -1.5s infinite}
+.spark-one{animation:gb-spark-pulse 3.2s ease-in-out infinite}
+.spark-two{animation:gb-spark-pulse 3.8s ease-in-out -1.2s infinite}
+.pulse{animation:gb-pulse-glow 2.4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.main-orb,.orbit-one,.orbit-two,.card-top,.card-bottom,.spark-one,.spark-two,.pulse{animation:none}}
