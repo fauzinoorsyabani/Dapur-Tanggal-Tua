@@ -1,4 +1,4 @@
-const HTML_URL = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663567085695/IRLkoRvGHriIAvSB.html';
+const HTML_URL = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663567085695/kZSkHiySTYeyynoG.html';
 const CSS_URL = 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663567085695/ndfAjkceuwEABaoU.css';
 
 export default async function handler(_req, res) {
