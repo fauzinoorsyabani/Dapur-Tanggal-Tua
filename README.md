@@ -49,3 +49,5 @@ Untuk deployment, gunakan PHP-FPM/Nginx atau Apache dengan document root menunju
 Deployment Vercel saat ini menggunakan upload production langsung karena GitHub App Vercel belum terpasang pada akun. Jika GitHub App diaktifkan, project dapat dihubungkan ke branch `main` agar deployment berjalan otomatis setiap push.
 
 Katalog saat ini memuat **26 SKU** dari daftar inventory 21 September 2026. Harga sengaja tidak ditampilkan atau dikirim otomatis; customer menanyakannya melalui WhatsApp `+62 895-6092-50509`. Main page memiliki animasi orb, orbit, floating cards, spark, dan status pulse dengan dukungan `prefers-reduced-motion`. Dua belas visual produk dibuat sebagai aset brand original; SKU lain memakai visual kategori yang dioptimalkan sebagai fallback sampai aset individual berikutnya tersedia.
+
+Kartu katalog terbaru menggunakan logo brand layanan masing-masing, termasuk Gemini, CapCut, Microsoft Office, Adobe, Canva, Figma, Prime Video, YouTube, HBO, Grok, dan lainnya. Detail source, mapping, dan catatan trademark ada di [docs/logo-assets.md](docs/logo-assets.md).
