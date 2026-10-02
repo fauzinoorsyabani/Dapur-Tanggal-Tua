@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/style.css",
+      "destination": "/api/style"
+    },
+    {
       "source": "/",
       "destination": "/api/site"
     }
