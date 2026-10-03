@@ -39,3 +39,11 @@
 .product-card:hover .product-logo{transform:scale(1.08) rotate(-3deg);box-shadow:0 20px 36px rgba(28,24,60,.26)}
 .product-logo[src$=".svg"]{padding:24px}
 .sold-out .product-logo{filter:grayscale(.7);opacity:.72}
+
+/* Catalog pagination */
+.catalog-pagination{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:28px}
+.page-button{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:white;color:var(--ink);font-size:18px;cursor:pointer;transition:transform .2s var(--ease),background .2s,color .2s}
+.page-button:hover:not(:disabled){background:var(--ink);color:var(--lime);transform:translateY(-2px)}
+.page-button:disabled{opacity:.35;cursor:not-allowed}
+.page-status{min-width:118px;text-align:center;color:#77777e;font:11px 'DM Mono';text-transform:uppercase;letter-spacing:.05em}
+@media(prefers-reduced-motion:reduce){.page-button{transition:none}}
